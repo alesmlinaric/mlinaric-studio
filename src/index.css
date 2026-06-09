@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- GLOBAL COLOR SYSTEM ---------- */
+:root {
+  --bg-main: #0B0B0F;
+  --bg-surface: #111114;
+
+  --text-primary: #F5F5F7;
+  --text-secondary: #A1A1AA;
+
+  --accent-gold: #D4AF37;
+  --accent-gold-hover: #E5C46B;
+
+  --border-subtle: #2A2A2E;
+}
+
+/* ---------- BASE STYLES ---------- */
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+  }
+}
+
+/* ---------- CUSTOM UTILITIES ---------- */
+
+@layer utilities {
+  /* Radial gradient (hero background option) */
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+
+  /* Subtle Apple-style gradient background */
+  .bg-premium-gradient {
+    background: radial-gradient(
+      circle at 20% 20%,
+      #1a1a1a 0%,
+      #0b0b0f 60%
+    );
+  }
+
+  /* Premium gold text */
+  .text-gold {
+    color: var(--accent-gold);
+  }
+
+  /* Gold button */
+  .bg-gold {
+    background-color: var(--accent-gold);
+  }
+
+  .bg-gold:hover {
+    background-color: var(--accent-gold-hover);
+  }
+
+  /* Subtle borders */
+  .border-subtle {
+    border-color: var(--border-subtle);
+  }
+
+  /* Secondary text */
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+}
