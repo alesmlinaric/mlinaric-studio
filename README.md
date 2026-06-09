@@ -78,5 +78,5 @@ npm run build
 
 ## Author
 
-Aleš Mlinarič
-https://mlinaric.studio
+Aleš Mlinarič  
+Portfolio: https://mlinaric.studio
